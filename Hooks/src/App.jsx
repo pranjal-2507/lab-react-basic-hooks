@@ -8,7 +8,8 @@ import './App.css';
 // import Progression3 from './Components/Progression3'
 // import Progression4 from './Components/Progression4'
 // import Progression5 from './Components/Progression5'
-import Progression6 from './Components/Progression6'
+// import Progression6 from './Components/Progression6'
+import Task from './Components/Task';
 
 
 export const ToggleTheme = React.createContext()
@@ -24,7 +25,8 @@ function App() {
   return (
     <ToggleTheme.Provider value={state}>
       <button onClick={handleToggle}>Toggle</button>
-      <Progression6/>
+      {/* <Progression6/> */}
+      <Task/>
     </ToggleTheme.Provider>
   );
 }
